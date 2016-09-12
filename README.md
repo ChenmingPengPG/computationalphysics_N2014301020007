@@ -4,7 +4,7 @@
 |   Content                                                                         |
 |-----------------------------------------------------------------------------------|
 |【Exercise_01】（）                                                                |
-|【Exercise_02】()        |
+|【Exercise_02】(https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_02)        |
 |【Exercise_03_AllLevels】（）      |
 |【Exercise_04_:Chapter 1 problem 1.5:The decay of two kinds of particles】（）      |
 |【Exercise_05_:Chapter 1 problem 1.6:Population growth】（）      |
