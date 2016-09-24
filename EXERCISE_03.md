@@ -33,4 +33,8 @@ a = "".join(l)
 <br/>    
 
 当然有更多的方法解决这个问题，除了画的东西，方法上也希望各位能脑洞大开！
+    
+# 第一个是利用清屏指令和print指令使字母在屏幕上显示出来
+## [这是我的移动版PCM QAQ](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/movepcm.py)
+
 
