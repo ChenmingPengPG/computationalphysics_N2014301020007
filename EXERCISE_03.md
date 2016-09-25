@@ -1,6 +1,7 @@
 #第三次作业
 
-## 在课程主页上复习这两次课程的内容，初步掌握python和matplotlib的语法规则，为接下来的课程做好准备作业L1 在屏幕上让你的英文名字水平移动起来
+## 在课程主页上复习这两次课程的内容，初步掌握python和matplotlib的语法规则，为接下来的课程做好准备
+## 作业L1 在屏幕上让你的英文名字水平移动起来
 
 ###提示：可以使用如下语句把屏幕清理干净
 
@@ -39,7 +40,7 @@ a = "".join(l)
 ## [这是我的移动版PCM QAQ](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/movepcm.py)     
 运用cmd运行这个py文件即可
 # 第二个在点阵上作图 旋转，鉴于水平有限不会做旋转的， 自己做了个火柴人
-##[火柴人](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISElittleman.py)
+## [火柴人](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISElittleman.py)
 
 # 致谢
 ## 感谢曾梓龙和卢江玮同学帮助解答疑问
