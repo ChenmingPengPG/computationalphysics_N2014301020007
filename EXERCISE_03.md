@@ -37,5 +37,11 @@ a = "".join(l)
 # 第一个是利用清屏指令和print指令使字母在屏幕上显示出来
 ## [这是我的移动版PCM QAQ](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/movepcm.py)     
 运用cmd运行这个py文件即可
+# 第二个在点阵上作图 旋转，鉴于水平有限不会做旋转的， 自己做了个火柴人
+##[火柴人](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISElittleman.py)
+
+# 致谢
+## 感谢曾梓龙和卢江玮同学帮助解答疑问
+
 
 
