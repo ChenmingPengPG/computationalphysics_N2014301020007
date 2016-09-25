@@ -9,6 +9,7 @@ import os
 i = os.system('cls')
 <br/>
 字符移动可以用在每行前面增加空格的方法实现
+<br/>
 print("      ###")
 <br/>
 print("     #   ")
