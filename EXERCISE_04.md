@@ -14,4 +14,4 @@ should vanish.
 ## 假设原子的衰变方程
 ### <img src="http://latex.codecogs.com/gif.latex?\frac{dN}{dt}=-\frac{N}{\tau}" alt="" title="" />
 对N做泰勒展开得到 <br/>
-   <img src="http://latex.codecogs.com/gif.latex?N(\Delta)=N(0)+\frac{dN}{dt}\cdot\Deltat+\frac{1}{2}\cdot\frac{d^2N}{dt^2}+" alt="" title="" />
+  ![](http://latex.codecogs.com/gif.latex?N%28%5CDelta%29%3DN%280%29&plus;%5Cfrac%7BdN%7D%7Bdt%7D%5Ccdot%5CDelta%20t&plus;%5Cfrac%7B1%7D%7B2%7D%5Ccdot%5Cfrac%7Bd%5E2%20N%7D%7Bdt%5E2%7D&plus;...)
