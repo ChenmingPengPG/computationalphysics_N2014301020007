@@ -30,6 +30,40 @@ should vanish.
  由（1.0）知    ![](http://latex.codecogs.com/gif.latex?N_A%28t&plus;%5CDelta%20t%29%3DN_A%28t%29&plus;%5Cfrac%7BN_B-N_A%7D%7B%5Ctau%7D%5Ccdot%20%5CDelta%20t)    
  同理可知    ![](http://latex.codecogs.com/gif.latex?N_B%28t&plus;%5CDelta%20t%29%3DN_B%28t%29&plus;%5Cfrac%7BN_A-N_B%7D%7B%5Ctau%7D%5Ccdot%20%5CDelta%20t)
  
- #以下是在python中进行模拟得代码
+# 以下是在python中的代码模拟
+>import numpy as np    
+ import pylab as pl    
+ Number_A=[]    
+ Number_B=[]    
+ t=[]    
+ print('the number of A atoms')    
+ number_a=float(input())    
+ Number_A.append(number_a)    
+ print('the number of B atoms')    
+ number_b=float(input())    
+ Number_B.append(number_b)    
+ print('the time of decay')    
+ tdecay=float(input())    
+ print('the time step')    
+ dt=float(input())    
+ t.append(0)    
+ for i in range(100):    
+     NA=Number_A[i]+((Number_B[i]-Number_A[i])/tdecay)*dt    
+     NB=Number_B[i]+((Number_A[i]-Number_B[i])/tdecay)*dt    
+     tadd=t[i]+dt    
+     Number_A.append(NA)    
+     Number_B.append(NB)    
+     t.append(tadd)    
+ t_max=t[-1]    
+pl.plot(t,Number_A,'r')    
+pl.plot(t,Number_B,'g')    
+pl.title('the decay between A and B')    
+pl.xlabel('the time of decay')    
+pl.ylabel('number of atoms')    
+pl.xlim(0.00,t_max)    
+pl.ylim(Number_B[0],Number_A[0])    
+pl.show()    
+
+# 得到的结果如下图所示
  
  
