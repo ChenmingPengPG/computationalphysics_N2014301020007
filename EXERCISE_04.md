@@ -30,3 +30,6 @@ should vanish.
  由（1.0）知    ![](http://latex.codecogs.com/gif.latex?N_A%28t&plus;%5CDelta%20t%29%3DN_A%28t%29&plus;%5Cfrac%7BN_B-N_A%7D%7B%5Ctau%7D%5Ccdot%20%5CDelta%20t)    
  同理可知    ![](http://latex.codecogs.com/gif.latex?N_B%28t&plus;%5CDelta%20t%29%3DN_B%28t%29&plus;%5Cfrac%7BN_A-N_B%7D%7B%5Ctau%7D%5Ccdot%20%5CDelta%20t)
  
+ #以下是在python中进行模拟得代码
+ 
+ 
