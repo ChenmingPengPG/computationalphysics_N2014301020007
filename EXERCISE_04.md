@@ -31,7 +31,8 @@ should vanish.
  同理可知    ![](http://latex.codecogs.com/gif.latex?N_B%28t&plus;%5CDelta%20t%29%3DN_B%28t%29&plus;%5Cfrac%7BN_A-N_B%7D%7B%5Ctau%7D%5Ccdot%20%5CDelta%20t)
  
 # 以下是在python中的代码模拟
->import numpy as np    
+<pre><code>
+ import numpy as np    
  import pylab as pl    
  Number_A=[]    
  Number_B=[]    
@@ -55,14 +56,15 @@ should vanish.
      Number_B.append(NB)    
      t.append(tadd)    
  t_max=t[-1]    
-pl.plot(t,Number_A,'r')    
-pl.plot(t,Number_B,'g')    
-pl.title('the decay between A and B')    
-pl.xlabel('the time of decay')    
-pl.ylabel('number of atoms')    
-pl.xlim(0.00,t_max)    
-pl.ylim(Number_B[0],Number_A[0])    
-pl.show()    
+ pl.plot(t,Number_A,'r')    
+ pl.plot(t,Number_B,'g')    
+ pl.title('the decay between A and B')    
+ pl.xlabel('the time of decay')    
+ pl.ylabel('number of atoms')    
+ pl.xlim(0.00,t_max)    
+ pl.ylim(Number_B[0],Number_A[0])    
+ pl.show()
+</code></pre>
 
 # 得到的结果如下图所示
 ![](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/figure_1.png)
