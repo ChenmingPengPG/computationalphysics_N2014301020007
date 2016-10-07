@@ -65,5 +65,8 @@ pl.ylim(Number_B[0],Number_A[0])
 pl.show()    
 
 # 得到的结果如下图所示
+![](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/figure_1.png)
+
+## 致谢曾梓龙同学帮助解决疑问
  
  
