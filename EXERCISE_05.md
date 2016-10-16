@@ -72,5 +72,7 @@ pl.ylabel('y ($m$)')
 pl.ylim(0)
 pl.show()
 </code></pre>
+# 得到的图形如下所示,分别是射击角度在15°,30°,45°,60°,75° 所得到的
+![](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/figure_1.png)
   
  
