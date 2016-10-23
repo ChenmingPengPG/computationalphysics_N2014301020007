@@ -23,22 +23,20 @@ class cannon_shell:
         distance_x=float(input())
         print('distanceY(Y<0)->')
         distance_y=float(input())
-
-        x=0
-        y=0
         angle=9
         vmin = []
         Angle=[]
         while(angle<=50):                 #扫描角度，求各角度下，发射距离一定，炮弹的发射速度，求出速度最小值
-            angle=angle+1
+            angle=angle+0.1
             x0=0
-            v0=150
+            v0=50
             while(x0<=distance_x):         #扫描速度，求角度一定，发射距离一定时的炮弹发射速度
-
                 cos1 = math.cos(angle*math.pi/180)
                 sin1 = math.sin(angle*math.pi/180)
                 vx = v0*cos1
                 vy = v0*sin1
+                y=0
+                x=0
                 while(y>=distance_y):  #仅支持distance_y<0
                     g = 9.8             #求角度一定，速度一定时，发射距离
                     a = (1 - 6.5e-3 * y / 288) ** 2.5
@@ -49,14 +47,17 @@ class cannon_shell:
                     vy = vy - (4e-5 * v * vy * self.dt * a + g) * self.dt
 
                 x0=x
-                v0=v0+10
+                v0=v0+1
             vmin.append(v0)
             Angle.append(angle)
         vm=min(vmin)
         a=vmin.index(vm)
         b=Angle[a]
-        print(vm-10)
+        print(vm-1)
         print(b)
 a=cannon_shell()
 a.run()
 </code></pre>
+
+# 输入x=5000，y=-10，得到vmin=225，angle=43.70000000000037
+# 输入x=10000，y=-10，得到vmin=350，angle=41.6000000000034
