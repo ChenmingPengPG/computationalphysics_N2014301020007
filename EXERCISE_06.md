@@ -53,7 +53,10 @@ class cannon_shell:
             vmin.append(v0)
             Angle.append(angle)
         vm=min(vmin)
+        a=vmin.index(vm)
+        b=Angle[a]
         print(vm-10)
+        print(b)
 a=cannon_shell()
 a.run()
 </code></pre>
