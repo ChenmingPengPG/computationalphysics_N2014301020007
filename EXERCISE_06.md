@@ -13,6 +13,7 @@
 # -*- coding: utf-8 -*-
 import pylab as pl
 import math
+import andom
 class cannon_shell:
     def __init__(self,time_step=0.01,):
         self.dt = time_step
@@ -78,5 +79,6 @@ a.run()
     print(x)
 </code></pre>
 # 5000m下，vmin=225，angle=43.7，实际发射距离为5019.668m，误差19.668m
-#然后最后以上都忘记考虑迎面风阻的影响了，也不准备考虑了QAQ,所以默认空气静止情况下
-
+# 10000m下，vmin=350，angle=41.6，实际发射距离为10007.699m，误差7.699m
+##然后最后以上都忘记考虑迎面风阻的影响了，也不准备考虑了QAQ,所以默认空气静止情况下
+##由于是有3个循环的过程，类似穷举的方法，所以运算时间会比较长啊，sad
