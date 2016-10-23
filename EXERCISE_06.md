@@ -61,3 +61,22 @@ a.run()
 
 # 输入x=5000，y=-10，得到vmin=225，angle=43.70000000000037
 # 输入x=10000，y=-10，得到vmin=350，angle=41.6000000000034
+# 考虑到误差后，初始速度5%误差，角度+-2度误差，运用算得值，求实际发射距离，可加入以下代码
+<pre><code>
+    v=random.uniform(vr*0.95,v*1.05)
+    angler=random.uniform(b-2,b+2)
+    vx=(v)*math.cos(angler*math.pi/180)
+    vy = (v) * math.sin(angler* math.pi / 180)
+    while (y >= distance_y):  # 仅支持distance_y<0
+        g = 9.8  # 求角度一定，速度一定时，发射距离
+        a = (1 - 6.5e-3 * y / 288) ** 2.5
+        x = x + vx * self.dt
+        y = y + vy * self.dt
+        v = math.sqrt(vx ** 2 + vy ** 2)
+        vx = vx - 4e-5 * v * vx * self.dt * a
+        vy = vy - (4e-5 * v * vy * self.dt * a + g) * self.dt
+    print(x)
+</code></pre>
+# 5000m下，vmin=225，angle=43.7，实际发射距离为5019.668m，误差19.668m
+#然后最后以上都忘记考虑迎面风阻的影响了，也不准备考虑了QAQ,所以默认空气静止情况下
+
