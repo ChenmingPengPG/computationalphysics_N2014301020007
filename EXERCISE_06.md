@@ -15,7 +15,7 @@ import pylab as pl
 import math
 import andom
 class cannon_shell:
-    def __init__(self,time_step=0.01,):
+    def __init__(self,time_step=0.001,):
         self.dt = time_step
         self.l_x=[0]
         self.l_y=[0]
@@ -24,11 +24,11 @@ class cannon_shell:
         distance_x=float(input())
         print('distanceY(Y<0)->')
         distance_y=float(input())
-        angle=9
+        angle=41
         vmin = []
         Angle=[]
-        while(angle<=50):                 #扫描角度，求各角度下，发射距离一定，炮弹的发射速度，求出速度最小值
-            angle=angle+0.1
+        while(angle<=46):                 #扫描角度，求各角度下，发射距离一定，炮弹的发射速度，求出速度最小值
+            angle=angle+0.01
             x0=0
             v0=50
             while(x0<=distance_x):         #扫描速度，求角度一定，发射距离一定时的炮弹发射速度
@@ -61,7 +61,7 @@ a.run()
 </code></pre>
 
 # 输入x=5000，y=-10，得到vmin=234，angle=43.96000000000037
-# 输入x=10000，y=-10，得到vmin=350，angle=41.6000000000034
+# 输入x=10000，y=-10，得到vmin=350，angle=42.6000000000034
 # 考虑到误差后，初始速度5%误差，角度+-2度误差，运用算得值，求实际发射距离，可加入以下代码
 <pre><code>
 import pylab as pl
