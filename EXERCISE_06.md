@@ -64,22 +64,40 @@ a.run()
 # 输入x=10000，y=-10，得到vmin=350，angle=41.6000000000034
 # 考虑到误差后，初始速度5%误差，角度+-2度误差，运用算得值，求实际发射距离，可加入以下代码
 <pre><code>
-    v=random.uniform(vr*0.95,v*1.05)
-    angler=random.uniform(b-2,b+2)
-    vx=(v)*math.cos(angler*math.pi/180)
-    vy = (v) * math.sin(angler* math.pi / 180)
+import pylab as pl
+import math
+import random
+print('print v')
+v=float(input())
+print('print angle')
+b=float(input())
+l=[]
+n=0
+dt=0.01
+distance_y=-10
+while(n<=5):
+    vr = random.uniform(v * 0.95, v * 1.05)
+    angler = random.uniform(b - 2, b + 2)
+    vx = (vr) * math.cos(angler * math.pi / 180)
+    vy = (vr) * math.sin(angler * math.pi / 180)
+    x = 0
+    y = 0
+
     while (y >= distance_y):  # 仅支持distance_y<0
         g = 9.8  # 求角度一定，速度一定时，发射距离
         a = (1 - 6.5e-3 * y / 288) ** 2.5
-        x = x + vx * self.dt
-        y = y + vy * self.dt
-        v = math.sqrt(vx ** 2 + vy ** 2)
-        vx = vx - 4e-5 * v * vx * self.dt * a
-        vy = vy - (4e-5 * v * vy * self.dt * a + g) * self.dt
-    print(x)
+        x = x + vx * dt
+        y = y + vy * dt
+        v0 = math.sqrt(vx ** 2 + vy ** 2)
+        vx = vx - 4e-5 * v0* vx * dt * a
+        vy = vy - (4e-5 * v0* vy * dt * a + g)*dt
+    l.append(x)
+    n=n+1
+print(l)
 </code></pre>
-# 5000m下，vmin=225，angle=43.7，实际发射距离为5019.668m，误差19.668m
-# 10000m下，vmin=350，angle=41.6，实际发射距离为10007.699m，误差7.699m
+# 5000m下，vmin=225，angle=43.9，实际发射距离为[4774.780195855228, 5167.606107162365, 4856.046591397077, 5394.589311949285, 4983.033557585999, 4702.162040317743]
+# 10000m下，vmin=350，angle=42.06，实际发射距离为[10679.54578233396, 10702.504854090246, 10616.816065253992, 9525.325494884954, 9848.96483302615, 9882.876848894179]
+#精度上主要取决于time_step的大小，其次为角度扫描和速度扫描
 ##然后最后以上都忘记考虑迎面风阻的影响了，也不准备考虑了QAQ,所以默认空气静止情况下
 ##由于是有3个循环的过程，类似穷举的方法，所以运算时间会比较长啊，sad
 
