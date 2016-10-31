@@ -276,6 +276,7 @@ pl.show()
 </code></pre>
 ##得到图像如图所示
 ![](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/figure_1-4.png)
+##当FD=0.5时，庞加莱界面上大致是一封闭曲线，可以认为运动是准周期的;而当FD=1.2时，庞加莱截面上是一些成片的具有分形结构的密集点，运动变为混沌的
 ##考虑在特定的时间点附近的omega和theta的分布情况，代码如下
 <pre><code>
 import pylab as pl
@@ -333,3 +334,8 @@ A1.draw()
 </code></pre>
 #得到下图图像
 ![](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/figure_1-3.png)
+###我们可以观察到奇异 吸引子
+###心得，混沌并非等同于复杂，混沌现象普遍存在于大量非线性系统中，结构简单如单摆也可能做混沌运动；存在混沌现象动力学系统对初值十分敏感，简单原因可导致复杂后果；混沌理论与分形几何学有着密不可分的联系，后者是研究前者的有力工具。
+
+##致谢倪世杰同学的代码帮助
+
