@@ -332,4 +332,4 @@ A1.draw()
 
 </code></pre>
 #得到下图图像
-![](https://github.com/Damonphysics/computationalphysics_N2014301020007/commit/35f8e35b00923847ca705705a11b7072823e0ea0?diff=unified)
+![](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/figure_1-3.png)
