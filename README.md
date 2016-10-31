@@ -9,9 +9,9 @@
 |[Exercise_04_:Chapter 1 problem 1.5:The decay of two kinds of particles](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_04.md)|
 |[Exercise_05_:Chapter 2 problem 2.9:The trajectory of cannon shell](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_05.md)     |
 |[Exercise_06_:Chapter 2 problem 2.10:The minimum v and consider the height between cannon and target](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_06.md)      |
-|[Exercise_07](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_07)      |
-|[Exercise_08](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_08)      |
-|[Exercise_09](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_09)     |
+|[Exercise_07](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_07.md)      |
+|[Exercise_08](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_08.md)      |
+|[Exercise_09](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_09.md)     |
 |         ……                |
-|[Final project](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/Final%20Project)|
+|[Final project](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/Final%20Project.md)|
 
