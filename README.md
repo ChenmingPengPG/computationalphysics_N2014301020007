@@ -11,7 +11,7 @@
 |[Exercise_06_:Chapter 2 problem 2.10:The minimum v and consider the height between cannon and target](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_06.md)      |
 |[Exercise_07 :Chapter 3 pendulum problem](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_07.md)      |
 |[Exercise_08 :Chapter 3 3.18](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_08.md)      |
-|[Exercise_09](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_09.md)     |
+|[Exercise_09 :Chapter 3 stadium billiard](http://www.jianshu.com/p/2d1a5ee9536e)     |
 |         ……                |
 |[Final project](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/Final%20Project.md)|
 
