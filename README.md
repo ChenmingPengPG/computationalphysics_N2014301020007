@@ -12,6 +12,6 @@
 |[Exercise_07 :Chapter 3 pendulum problem](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_07.md)      |
 |[Exercise_08 :Chapter 3 3.18](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_08.md)      |
 |[Exercise_09 :Chapter 3 stadium billiard](http://www.jianshu.com/p/2d1a5ee9536e)     |
-|         ……                |
+|[Exercise 10 :Chapter 4 The solar system](http://www.jianshu.com/p/e017d5132161)              |
 |[Final project](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/Final%20Project.md)|
 
