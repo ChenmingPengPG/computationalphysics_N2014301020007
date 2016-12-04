@@ -13,5 +13,6 @@
 |[Exercise_08 :Chapter 3 3.18](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_08.md)      |
 |[Exercise_09 :Chapter 3 stadium billiard](http://www.jianshu.com/p/2d1a5ee9536e)     |
 |[Exercise 10 :Chapter 4 The solar system](http://www.jianshu.com/p/e017d5132161)              |
+|[Exercise 11 :Chapter 4 The three-body motion](http://www.jianshu.com/p/ce4e98d9ce40)|
 |[Final project](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/Final%20Project.md)|
 
