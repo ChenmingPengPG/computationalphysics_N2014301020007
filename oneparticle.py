@@ -107,7 +107,7 @@ class oneparticle():
         plt.show()
 a=oneparticle()
 a.run()
-#a.show()
+a.show()
 a.show_trajectory()
 
 
