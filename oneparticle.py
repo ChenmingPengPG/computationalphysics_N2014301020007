@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib import animation
 
 class oneparticle():
-    def __init__(self,x0=0,dt=0.1,T=10,p1=0.5,p2=0.6,x2ave=0):
+    def __init__(self,x0=0,dt=0.1,T=10,p1=0.5,p2=0.6,x2ave=0,tot=400):
         self.x1=[x0]
         self.t1=[0]
         self.x2 = [x0]
@@ -24,20 +24,22 @@ class oneparticle():
         self.x2ave=[x2ave]
         self.x=[0]
         self.y=[0]
+        self.tot=tot
     def run(self):
-        x2ave=0
         xnew1=0
         xnew2=0
-        for i in range (1,100):
-            xnew=0
-            for j in range (i):
-                if (random.random()<0.5):
-                    dx=-1
-                else:
-                    dx=1
-                xnew=xnew+dx
-            x2ave=x2ave+xnew**2
-            xx=x2ave/i
+        for j in range (1,100): #步数
+            x2ave=0
+            for i in range (self.tot):
+                xi=0
+                for t in range (1,j):
+                    if (random.random()<0.5):
+                        dx=-1
+                    else:
+                        dx=1
+                    xnew=xnew+dx
+                x2ave=x2ave+xi**2
+            xx=x2ave/self.tot
             self.x.append(xx)
             self.num.append(self.num[-1]+1)
         for i in range (100):
@@ -76,7 +78,8 @@ class oneparticle():
         pl.ylabel('x')
         pl.xlim(0,100)
         pl.ylim(-20.20)
-        pl.axis('equal')
+        pl.title('Random walk in one dimension')
+        #pl.axis('equal')
         pl.legend(loc='best',frameon=False)
 
         pl.show()
