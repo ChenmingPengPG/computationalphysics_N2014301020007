@@ -28,20 +28,25 @@ class oneparticle():
     def run(self):
         xnew1=0
         xnew2=0
-        for j in range (1,100): #步数
-            x2ave=0
-            for i in range (self.tot):
-                xi=0
-                for t in range (1,j):
-                    if (random.random()<0.5):
-                        dx=-1
-                    else:
-                        dx=1
-                    xnew=xnew+dx
-                x2ave=x2ave+xi**2
-            xx=x2ave/self.tot
-            self.x.append(xx)
+        for j in range (self.tot):
+            x1=0
+            for i in range (100):    #每人走100步
+                if (random.random ()<0.5):
+                    dx=-1
+                else:
+                    dx=1
+                x1=x1+dx
+                self.x.append(x1**2)
+        for k in range (100):
+            xx=0
+            for l in range(self.tot): #取出第k步每人的位移
+                need = k+1+l*100
+                xx=self.x[need]+xx
+            xneed=xx/self.tot    #求出k步位移平方的均值
+            self.x2ave.append(xneed)
             self.num.append(self.num[-1]+1)
+            
+        ##以下是两个人的位移统计   
         for i in range (100):
             if (random.random() < 0.5):
                 dx = -1
