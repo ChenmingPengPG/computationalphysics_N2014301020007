@@ -16,5 +16,5 @@
 |[Exercise_11 :Chapter 4 The three-body motion](http://www.jianshu.com/p/ce4e98d9ce40)|
 |[Exercise_12 :Chapter 5 Electric Potentials and Fields:Laplace's Equation](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/EXERCISE_12.md)|
 |[Exercise_13:Chapter 6 Waves](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/Exercise_13.md)|
-|[Final project](https://github.com/Damonphysics/computationalphysics_N2014301020007/blob/master/Final%20Project.md)|
+|[Final project](http://www.jianshu.com/p/11a2189e1f18)|
 
